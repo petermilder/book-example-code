@@ -1,0 +1,16 @@
+Most portions of this project are licensed under the GNU General Purpose License 
+Version 3. Specific license information is provided in each subdirectory.
+
+The following directories are not GPLv3 licensed:
+
+- example_code/petalinux_dma/memalloc is (C) 2017 Giuseppe DiGugielmo and is 
+licensed under an MIT license
+
+- example_code/xilinx_modified code contains hand-modified versions of code that
+was automatically generated using Xilinx tools. They are included for 
+educational purposes only to demonstrate how the reference examples can easily
+be changed. No copyright or ownership of the original code is claimed or 
+licensed
+
+All other portions of this project are (C) 2018-2019 Peter Milder and are 
+licensed under GNU GPLv3.

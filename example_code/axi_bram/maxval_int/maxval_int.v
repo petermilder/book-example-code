@@ -79,7 +79,7 @@ module bramMod(clk_a, addr_a, wrdata_a, rddata_a, wr_a, en_a, clk_b, addr_b, wrd
     reg    [(WIDTH-1):0]     rddata_a;
     reg    [(WIDTH-1):0]     rddata_b;
     
-    reg [(WIDTH-1):0] RAM[(DEPTH-1):0];
+    reg    [(WIDTH-1):0]     RAM[(DEPTH-1):0];
 
     always @(posedge clk_a) begin
         if (en_a) begin
@@ -150,8 +150,8 @@ module ctrlpath(
     output [31:0] pl_status);
     
     // Current state register and next state signal
-    reg [2:0]           state;
-    reg [2:0]           next_state;
+    reg [2:0]     state;
+    reg [2:0]     next_state;
 
     // State machine function:
     // state 0: wait for ps_control == 1 (PS start signal)
